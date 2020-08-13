@@ -1,8 +1,8 @@
 const mongoose = require('mongoose');
 
-const Todo = require('./Todo');
+const todo = require('./todo');
 
-const Connction = require('./connection');
+const connction = require('./connection');
 
 mongoose.onConnection(console.log('models working'));
 

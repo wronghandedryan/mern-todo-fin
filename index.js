@@ -6,13 +6,13 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <ToDo/>
+        <Todo/>
       </div>
     );
   }
 }
 
 ReactDOM.render(
-  <App />,
+  <Todo />,
   document.getElementById('root')
 );
