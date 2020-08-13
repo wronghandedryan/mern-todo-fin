@@ -21,7 +21,7 @@ export default class TodoList extends React.Component {
 
    componentDidMount() {
     const [ data, setData ] = useState('');
-    axios('./backend/data/api', {
+    axios('./backend/data/api', {np
       method: 'POST',
       body: JSON.stringify({
         createTodo: '',
