@@ -63,16 +63,16 @@ async function addTodois(data){
       
         </form>
       </div>
-      <div class="table-holder">
-        <table>
-           <ul>
-           <li />{{createTodo}}
-           </ul>
+      // <div class="table-holder">
+      //   <table>
+      //      <ul>
+      //      <li />{{createTodo}}
+      //      </ul>
 
-         </table>
+      //    </table>
        
         
-      </div>
+      // </div>
   </div>
     )
   }
