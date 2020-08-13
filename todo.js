@@ -3,17 +3,17 @@ import ReactDOM from 'react-dom';
 import axios from 'axios';
 import {todoList} from '/backend/model';
 debugger
-const Todo = todoList(
+const TodoList = todoList(
   <div>
 
-  <p><strong>ToDo: </strong></p>
+  <p><strong>ToDd: </strong></p>
 
 
   </div>
 ) 
 
 
-export default class Todo extends React.Component {
+export default class TodoList extends React.Component {
 
   handleChange = event => {
     this.setState({ title: event.target.value });
@@ -33,12 +33,13 @@ export default class Todo extends React.Component {
     .then(response => response.json())
     .then(json => this.setState({data:json}))
     
-  
+   this.onChange = this.onChange.bind(this);
+   this.addTodoLIST = this.adDTodoList.bind(this);
 
-async function Todo(data){
+async function addTodois(data){
   e.preventDefault()
   try { 
-    const resp = await axios.Todo("/model", {data});
+    const resp = await axios.addTodoList("/model", {data});
   } catch(e) {
     createTodo(data);
     return;
@@ -49,30 +50,30 @@ async function Todo(data){
   render() {
     const {createTodo} = this.state
     return (
-      <div>
+  <div>
       <div class="form-holder">
-       <form onSubmit={(e, data) => createTodo(data)}>
-         <label id="Title">ToDo Title:
-           <textarea onSubmit={createTodo => setData(e.target.value)} value={createTodo} />
+         <form onSubmit={(e, data) => createTodo(data)}>
+              <label id="Title">ToDo Title:
+               <textarea onSubmit={addTodoList => setData(e.target.value)} value={createTodo} />
 
-        </label>
+               </label>
 
 
-        <input type="submit" value="createTodo" id="createTodo" />
+           <input type="submit" value="createTodo" id="createTodo" />
       
-    </form>
+        </form>
       </div>
       <div class="table-holder">
-      <table>
-      <ul>
-        {{createTodo}}
-      </ul>
+        <table>
+           <ul>
+           <li />{{createTodo}}
+           </ul>
 
-      </table>
+         </table>
        
         
       </div>
-      </div>
+  </div>
     )
   }
 }
