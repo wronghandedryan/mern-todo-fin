@@ -13,7 +13,7 @@ const TodoList = todoList(
 ) 
 
 
-export default class TodoList extends React.Component {
+export default class Todo extends React.Component {
 
   handleChange = event => {
     this.setState({ title: event.target.value });
