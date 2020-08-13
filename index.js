@@ -2,7 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import ReactRouter from 'react-router';
 import axios from 'axios';
-import ToDo from './ToDo';
+import Todo from './Todo';
+
+
+
 class App extends React.Component {
   render() {
     return (

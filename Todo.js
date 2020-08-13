@@ -1,7 +1,7 @@
 import React, {state} from 'react';
 import ReactDOM from 'react-dom';
 import axios from 'axios';
-import {todoList} from '/backend/model';
+import {todoList} from '/backend/model/todo';
 debugger
 const TodoList = todoList(
   <div>
