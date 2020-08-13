@@ -4,9 +4,9 @@ import axios from 'axios';
 import {todoList} from '/backend/model/todo';
 
 const todo = Todo (
-    render(
-      return()
-     <div {
+    render()
+      todo() {
+     <div>
 
         <p>
             <strong>ToDd:
@@ -15,10 +15,8 @@ const todo = Todo (
 
 
     </div>
-     }
-))
 
-
+}
 export default class Todo extends React.Component {
 
     handleChange = event => {
